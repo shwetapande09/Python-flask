@@ -1,4 +1,4 @@
-Pipeline {
+pipeline {
     agent any
     environment{
         REGISTRY_URL ="https://index.docker.to/v1/"
