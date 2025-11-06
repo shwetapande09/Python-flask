@@ -13,9 +13,9 @@ Pipeline {
             }
         }
         stage("Push docker image into registry"){
-        steps{
-            script{
-                docker.withRegistry("${REGISTRY_URL}", "${CREDS_ID}"){
+           steps{
+              script{
+                docker.withRegistry("${REGISTRY_URL}","${CREDS_ID}"){
                     echo "verify login details"
                     sh 'docker image push $IMAGE_NAME'
                 }
