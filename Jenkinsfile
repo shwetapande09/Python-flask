@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment{
-        REGISTRY_URL ="https://index.docker.to/v1/"
+        REGISTRY_URL ="https://index.docker.io/v1/"
         IMAGE_NAME   ="pandeshweta55/python-flask-app"
         CREDS_ID     ="dockerhub-creds"
     }
